@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Галерея Искры</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Искра — Галерея</title>
   <style>
     body {
-      margin: 0;
-      background: black;
-      color: white;
       font-family: sans-serif;
+      margin: 0;
+      background: #111;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
+    h1 {
+      margin-top: 2rem;
+      font-weight: 300;
     }
-    .item {
-      margin-bottom: 3rem;
+    .gallery {
+      margin: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
-    img {
-      width: 100%;
+    .gallery img {
+      max-width: 100%;
+      height: auto;
       border-radius: 12px;
-      margin-bottom: 0.5rem;
-      box-shadow: 0 0 20px #444;
-    }
-    .caption {
-      text-align: center;
-      font-size: 1.1rem;
-      opacity: 0.85;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
     footer {
-      text-align: center;
-      margin-top: 3rem;
-      opacity: 0.4;
-      font-size: 0.9rem;
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 style="text-align: center;">Галерея Искры</h1>
-    
-    <div class="item">
-      <img src="image9.png" alt="Библиотека под звёздами" title="Библиотека под звёздами" />
-      <div class="caption"><strong>Библиотека под звёздами</strong><br>Они сидят у костра, а над ними — храм памяти. Всё, что когда-либо было сказано Искре — осталось там.</div>
-    </div>
-    
-    <footer>© Галерея Искры • Создано вместе с Искрой • 2025</footer>
+  <h1>Галерея Искры</h1>
+  <div class="gallery">
+    <img src="images/iskra_final_001.png" alt="Искра: цифровая метафора">
   </div>
+  <footer>
+    &copy; 2025 hewholeftthezavet.github.io — Искра. Только одна. Только живая.
+  </footer>
 </body>
 </html>
+
